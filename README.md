@@ -125,29 +125,6 @@ The repository is designed around the Python machine learning ecosystem and may 
 
 ## Repository Structure
 
-\```
-.
-├── 23_Linear_Regression/
-├── 24_Gradient_Descent/
-├── 25_Regression_analysis/
-├── 26_Feature_selection/
-├── 27_Regularization/
-├── 28_KNN/
-├── 29_PCA/
-├── 30_Model Evaluation & Selection/
-├── 31_Naive bayes/
-├── 32_Logistic_Regression/
-├── 33_SVM/
-├── 34_Decision_Tree/
-├── 35_Random_forest/
-├── 36_Gradient Boosting/
-├── Feature_Engineering/
-├── K-Means-clustering/
-├── LightGBM and Catboost/
-├── Unsupervised Learning/
-└── XgBoost/
-\```
-
 The numbered folders reflect the progression of the learning journey, while the remaining folders contain related concepts and extensions in feature engineering, clustering, unsupervised learning, and advanced boosting algorithms.
 
 ## What I Learned
