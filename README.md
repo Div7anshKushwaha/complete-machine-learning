@@ -1,125 +1,186 @@
-# 🤖 Complete Machine Learning
+# Machine Learning
 
-> A structured, hands-on implementation of every major Machine Learning algorithm — from mathematical foundations to production-ready code.
-> Built while completing **CampusX DSMP 1.0 + 2.0** alongside **IIT Madras BS in Data Science and Applications**.
+A practical learning repository covering core machine learning algorithms, implementation exercises, experiments, and study resources.
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat&logo=python)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3+-orange?style=flat&logo=scikit-learn)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?style=flat&logo=jupyter)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+## Table of Contents
 
----
+- [Overview](#overview)
+- [Topics Covered](#topics-covered)
+- [Detailed Topic Guide](#detailed-topic-guide)
+- [Learning Path](#learning-path)
+- [Tech Stack and Libraries](#tech-stack-and-libraries)
+- [Repository Structure](#repository-structure)
+- [What I Learned](#what-i-learned)
+- [Future Learning](#future-learning)
+- [About Me](#about-me)
+- [Disclaimer](#disclaimer)
 
-## 📁 Repository Structure
+## Overview
 
-| # | Folder | Topics Covered |
-|---|--------|----------------|
-| 01 | [`23_Linear_Regression`](./23_Linear_Rigression/) | Simple & Multiple Linear Regression, OLS, MSE, R² — implemented from scratch |
-| 02 | [`24_Gradient_Descent`](./24_Gradient_Descent/) | Batch GD, Stochastic GD, Mini-batch GD — coded from scratch with visualization |
-| 03 | [`25_Regression_Analysis`](./25_Regression_analysis/) | Regression assumptions, F-statistic, multicollinearity, VIF, statsmodels |
-| 04 | [`26_Feature_Selection`](./26_Feature_selection/) | Filter methods, Wrapper methods (RFE, SFS), Embedded methods (LASSO, Tree-based) |
-| 05 | [`27_Regularization`](./27_Regularization/) | Ridge, Lasso, ElasticNet — geometric intuition + from-scratch implementation |
-| 06 | [`28_KNN`](./28_KNN/) | K-Nearest Neighbors for classification + regression, KD-Tree, weighted KNN |
-| 07 | [`29_PCA`](./29_PCA/) | Principal Component Analysis — Eigendecomposition, SVD, explained variance |
-| 08 | [`30_Model_Evaluation`](./30_Model%20Evaluation%20%26%20Selection/) | Cross-validation, ROC-AUC, Precision-Recall, GridSearchCV, RandomizedSearchCV |
-| 09 | [`31_Naive_Bayes`](./31_Naive_bayes/) | Gaussian, Multinomial, Bernoulli NB — Laplace smoothing, log probabilities |
-| 10 | [`32_Logistic_Regression`](./32_Logistic_Regression/) | Binary + Multiclass (OvR, Softmax), MLE, Log-loss, regularization |
-| 11 | [`33_SVM`](./33_SVM/) | Hard + Soft Margin SVM, Kernel trick (RBF, Polynomial), Dual problem |
-| 12 | [`34_Decision_Tree`](./34_Decision_Tree/) | CART algorithm, Gini impurity, pruning, feature importance, visualization |
-| 13 | [`35_Random_Forest`](./35_Random_forest/) | Bagging, Random Forest, OOB score, feature importance, hyperparameter tuning |
-| 14 | [`36_Gradient_Boosting`](./36_Gradient%20Boosting/) | Gradient Boosting — function space intuition, pseudo-residuals, math formulation |
-| 15 | [`XgBoost`](./XgBoost/) | XGBoost for regression + classification — Taylor series loss, similarity score |
-| 16 | [`LightGBM_and_CatBoost`](./LightGBM%20and%20Catboost/) | LightGBM (leaf-wise), CatBoost (categorical handling) — comparison with XGBoost |
-| 17 | [`K-Means-Clustering`](./K-Means-clustering/) | KMeans++, Elbow method, Silhouette score, Mini-batch KMeans |
-| 18 | [`Unsupervised_Learning`](./Unsupervised%20Learning/) | DBSCAN, Hierarchical Clustering, GMM, t-SNE |
+This repository documents my **Machine Learning learning journey** through practical notes, algorithm implementations, experiments, and learning resources. It focuses on building a strong understanding of machine learning fundamentals while connecting mathematical concepts with practical modeling workflows.
 
----
+The topics progress from foundational regression and optimization techniques to classification, feature engineering, model evaluation, ensemble learning, dimensionality reduction, and unsupervised learning. The repository is intended to serve both as a personal reference and as a clear overview of the concepts I have studied and implemented.
 
-## 🧠 Concepts Covered
+## Topics Covered
 
-**Supervised Learning**
-- Linear Models: Linear Regression, Logistic Regression, Ridge, Lasso, ElasticNet
-- Tree Models: Decision Trees, Random Forest, Gradient Boosting, XGBoost, LightGBM, CatBoost
-- Instance-based: KNN (classification + regression)
-- Kernel Methods: SVM (Hard/Soft margin, RBF, Polynomial kernel)
-- Probabilistic: Naive Bayes (Gaussian, Multinomial, Bernoulli)
+### Regression
+- Linear Regression
+- Regression Analysis
+- Regularization
 
-**Unsupervised Learning**
-- Clustering: KMeans, DBSCAN, Hierarchical (Single, Complete, Ward), GMM
-- Dimensionality Reduction: PCA (Eigendecomposition + SVD), t-SNE
+### Optimization
+- Gradient Descent
+- Model training and parameter optimization
 
-**ML Engineering**
-- Optimization: Batch GD, SGD, Mini-batch GD (from scratch)
-- Feature Engineering: Feature selection (Filter, Wrapper, Embedded), missing value imputation
-- Regularization: L1 (Lasso), L2 (Ridge), ElasticNet — geometric intuition
-- Model Evaluation: Cross-validation, ROC-AUC, Precision-Recall, F1, Confusion Matrix
-- Hyperparameter Tuning: GridSearchCV, RandomizedSearchCV, Optuna
+### Feature Engineering and Selection
+- Feature Engineering
+- Feature Selection
+- Regularization-based approaches to controlling model complexity
 
----
+### Classification
+- K-Nearest Neighbors
+- Naive Bayes
+- Logistic Regression
+- Support Vector Machines
+- Decision Trees
 
-## 🔧 Tech Stack
+### Ensemble Learning
+- Random Forest
+- Gradient Boosting
+- XGBoost
+- LightGBM
+- CatBoost
 
-```
-Python 3.10+    — Core language
-NumPy           — Numerical computing, from-scratch implementations
-Pandas          — Data manipulation and preprocessing
-Scikit-learn    — ML algorithms, pipelines, evaluation
-XGBoost         — Gradient boosting framework
-LightGBM        — Fast gradient boosting
-CatBoost        — Categorical feature boosting
-Optuna          — Hyperparameter optimization
-Matplotlib      — Visualizations
-Seaborn         — Statistical visualizations
-Jupyter         — Interactive notebooks
-```
+### Unsupervised Learning
+- K-Means Clustering
+- DBSCAN
+- General unsupervised learning concepts
 
----
+### Dimensionality Reduction
+- Principal Component Analysis
 
-## 🚀 How to Run
+### Model Evaluation and Selection
+- Model evaluation techniques
+- Model selection concepts
+- Comparing model performance and generalization
 
-```bash
-# Clone the repository
-git clone https://github.com/Div7anshKushwaha/complete-machine-learning.git
-cd complete-machine-learning
+## Detailed Topic Guide
 
-# Install dependencies
-pip install numpy pandas scikit-learn xgboost lightgbm catboost optuna matplotlib seaborn jupyter
+| Topic | Algorithm / Concept | Description |
+| --- | --- | --- |
+| Regression | Linear Regression | Introduces the relationship between input features and a continuous target using a linear model. |
+| Optimization | Gradient Descent | Explores iterative optimization for minimizing a model's loss function and learning suitable parameters. |
+| Regression | Regression Analysis | Covers the analysis and interpretation of regression models and their predictions. |
+| Feature Engineering and Selection | Feature Engineering | Studies techniques for transforming, creating, and preparing features for machine learning models. |
+| Feature Engineering and Selection | Feature Selection | Focuses on identifying useful features while reducing irrelevant or redundant information. |
+| Regularization | L1 and L2 Regularization | Examines methods for controlling model complexity and reducing overfitting. |
+| Classification | K-Nearest Neighbors | Classifies observations using the labels of nearby training examples. |
+| Dimensionality Reduction | Principal Component Analysis | Reduces the number of dimensions while preserving important patterns and variation in the data. |
+| Model Evaluation and Selection | Model Evaluation and Selection | Covers approaches for assessing model performance and choosing appropriate models. |
+| Classification | Naive Bayes | Uses conditional probability and a simplifying independence assumption for classification tasks. |
+| Classification | Logistic Regression | Models the probability of categorical outcomes and is commonly used for binary classification. |
+| Classification | Support Vector Machine | Finds decision boundaries that separate classes, with support for nonlinear relationships through kernels. |
+| Classification | Decision Tree | Represents decision rules in a tree structure for interpretable classification and prediction. |
+| Ensemble Learning | Random Forest | Combines multiple decision trees to improve robustness and predictive performance. |
+| Ensemble Learning | Gradient Boosting | Builds an ensemble sequentially, with each model attempting to improve upon the errors of previous models. |
+| Ensemble Learning | XGBoost | Explores an efficient and regularized implementation of gradient-boosted decision trees. |
+| Ensemble Learning | LightGBM | Studies a gradient-boosting framework designed for efficient training and scalable tree-based learning. |
+| Ensemble Learning | CatBoost | Covers gradient boosting with features designed to handle categorical data effectively. |
+| Unsupervised Learning | K-Means Clustering | Groups observations into a selected number of clusters based on similarity. |
+| Unsupervised Learning | DBSCAN | Identifies density-based clusters and can distinguish noise or outlier observations. |
+| Unsupervised Learning | Unsupervised Learning | Introduces methods for discovering structure and patterns in data without labeled target values. |
 
-# Launch Jupyter
-jupyter notebook
-```
+## Learning Path
 
-Then navigate to any folder and open the `.ipynb` file.
+The concepts in this repository can be approached in the following progression:
 
----
+\```
+Regression
+    → Optimization
+    → Feature Engineering and Selection
+    → Model Evaluation and Selection
+    → Classification
+    → Ensemble Learning
+    → Dimensionality Reduction
+    → Unsupervised Learning
+    → Advanced Machine Learning
+\```
 
-## 📌 Key Highlights
+A recommended study sequence is to begin with regression and gradient descent, develop strong data preparation and evaluation habits, then move into classification and tree-based models. Ensemble methods, dimensionality reduction, and clustering can then be studied as extensions for more complex machine learning workflows.
 
-- **From-scratch implementations** — Linear Regression, Gradient Descent, Backpropagation, PCA, KNN all implemented using only NumPy before using Sklearn
-- **Math-first approach** — Every algorithm includes mathematical formulation before code
-- **Bias-Variance Tradeoff** — Demonstrated practically across multiple algorithms
-- **Complete Boosting stack** — Gradient Boosting → XGBoost → LightGBM → CatBoost with comparison
-- **Full unsupervised suite** — KMeans, DBSCAN, Hierarchical, GMM, t-SNE in one place
+## Tech Stack and Libraries
 
----
+The repository is designed around the Python machine learning ecosystem and may use the following tools across different implementations and experiments:
 
-## 🎯 Learning Source
+- **Python** — General-purpose programming language for implementations and experiments
+- **NumPy** — Numerical computing and array operations
+- **Pandas** — Data manipulation and analysis
+- **Matplotlib** — Data visualization
+- **Seaborn** — Statistical visualization
+- **Scikit-learn** — Machine learning algorithms, preprocessing, and evaluation utilities
+- **XGBoost** — Gradient-boosted tree models
+- **LightGBM** — Efficient gradient-boosting models
+- **CatBoost** — Gradient boosting with strong support for categorical features
+- **Jupyter Notebook** — Interactive experimentation, documentation, and demonstrations
 
-- **IIT Madras BS in Data Science** — Machine Learning Foundations (MLF) + Machine Learning Techniques (MLT) + Machine Learning Practice(MLP) course
-  
----
+## Repository Structure
 
-## 👤 Author
+\```
+.
+├── 23_Linear_Regression/
+├── 24_Gradient_Descent/
+├── 25_Regression_analysis/
+├── 26_Feature_selection/
+├── 27_Regularization/
+├── 28_KNN/
+├── 29_PCA/
+├── 30_Model Evaluation & Selection/
+├── 31_Naive bayes/
+├── 32_Logistic_Regression/
+├── 33_SVM/
+├── 34_Decision_Tree/
+├── 35_Random_forest/
+├── 36_Gradient Boosting/
+├── Feature_Engineering/
+├── K-Means-clustering/
+├── LightGBM and Catboost/
+├── Unsupervised Learning/
+└── XgBoost/
+\```
 
-**Divyansh Kushwaha**
-IIT Madras — BS in Data Science and Applications
+The numbered folders reflect the progression of the learning journey, while the remaining folders contain related concepts and extensions in feature engineering, clustering, unsupervised learning, and advanced boosting algorithms.
 
-[![GitHub](https://img.shields.io/badge/GitHub-Div7anshKushwaha-black?style=flat&logo=github)](https://github.com/Div7anshKushwaha)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-divyansh--kushwaha-blue?style=flat&logo=linkedin)](https://linkedin.com/in/divyansh-kushwaha-603616383)
+## What I Learned
 
----
+Through these studies and implementations, I developed a working understanding of the following areas:
 
-## 📄 License
+- **Regression:** How linear models represent relationships between features and continuous target variables, and how regression models can be analyzed and improved.
+- **Gradient Descent:** How optimization iteratively updates model parameters to reduce a loss function.
+- **Feature Selection:** How selecting informative features can simplify models, improve efficiency, and support better generalization.
+- **Regularization:** How L1 and L2 penalties help control model complexity and reduce overfitting.
+- **Classification Algorithms:** How different algorithms, including KNN, Naive Bayes, Logistic Regression, SVM, and Decision Trees, approach classification problems.
+- **Tree-Based Models:** How decision trees create rule-based predictions and how tree structure supports interpretability.
+- **Ensemble Methods:** How combining multiple models can improve stability, predictive performance, and resistance to individual model weaknesses.
+- **Dimensionality Reduction:** How PCA can transform high-dimensional data into a smaller set of informative components.
+- **Clustering:** How methods such as K-Means and DBSCAN discover groups and structure in unlabeled data.
+- **Model Evaluation and Selection:** How to assess models systematically and select approaches that are suitable for a given learning task.
 
-MIT License — feel free to use, modify, and share.
+## Future Learning
+
+I plan to extend this learning journey into the following areas:
+
+- Deep Learning
+- Natural Language Processing
+- Computer Vision
+- Machine Learning Operations (MLOps)
+- Generative AI
+
+These areas will build on the foundations covered here and help connect classical machine learning knowledge with modern AI engineering workflows.
+
+## About Me
+
+I am pursuing a **BS in Data Science from IIT Madras** and am interested in **Machine Learning and AI Engineering**. This repository reflects my ongoing effort to understand machine learning concepts through structured study and practical implementation.
+
+## Disclaimer
+
+This is primarily a learning and practice repository. The implementations, explanations, and organization may be improved over time as I continue to learn, experiment, and develop a deeper understanding of machine learning.
